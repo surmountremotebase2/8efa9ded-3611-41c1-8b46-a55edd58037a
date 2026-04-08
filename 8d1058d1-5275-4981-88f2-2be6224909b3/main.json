@@ -1,1 +1,1 @@
-{}
+{"groups": {}, "interval": "1day", "assets": ["SSO"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "PRICE", "args": {"ticker": "SSO"}}, "second": {"name": "EMA", "args": {"length": "200", "ticker": "SSO"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "SSO", "amount": "100"}]}, "else_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "SSO", "amount": "0"}]}}]}
